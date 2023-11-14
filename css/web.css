@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans KR';
+    font-weight: 300;
+    line-height: 1;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.ofh {
+    overflow: hidden;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.jcb {
+    justify-content: space-between;
+}
+
+.aic {
+    align-items: center;
+}
+
+.rel {
+    position: relative;
+}
+
+.abs {
+    position: absolute;
+}
+
+.h100 {
+    height: 100px;
+}
+
+.h200 {
+    height: 200px;
+}
+
+.h300 {
+    height: 300px;
+}
+
+.h500 {
+    height: 500px;
+}
+
+.h600 {
+    height: 600px;
+}
+
+.w100 {
+    width: 100%;
+}
+
+.w1200 {
+    width: 1200px;
+}
+
+.wm {
+    width: 100000px;
+}
+
+#shopBanner .swiper-button-prev,
+#shopBanner .swiper-button-next,
+#shopBanner .swiper-pagination {
+    position: unset;
+
+}
+
+
+#shopBanner .swiper-button-prev::after {
+    /* display: block;    부트스트랩 안쓸거면 
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-top: 75%; */
+    content: "\F284";
+    font-family: bootstrap-icons !important;
+
+}
+
+#shopBanner .swiper-button-next::after {
+    /* display: block;
+    color: white;
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    margin-top: 75%; */
+    content: "\F285";
+    font-family: bootstrap-icons !important;
+
+}
+
+.btns {
+    z-index: 99999;
+    right: 0;
+    bottom: 0.5rem;
+}
+
+.btnbox {
+    margin: 0 0.5rem;
+    background-color: rgba(69, 70, 76, .3);
+    padding: 0 0.5rem;
+    border-radius: 1rem;
+}
+
+.btnbox .swiper-button-prev,
+.btnbox .swiper-button-next {
+    width: auto;
+    height: auto;
+    margin: 0;
+}
+
+#shopBanner .swiper-pagination,
+#shopBanner .swiper-pagination+a {
+    padding: 0 0.5rem;
+}
+
+
+
+.toggle button::after {
+    content: "\F4C4";
+    font-family: bootstrap-icons !important;
+    color: white;
+}
+
+.toggle.on button::after {
+    content: "\F593";
+}
+
+.wsn {
+    white-space: nowrap;
+}
+
+.btnbox button {
+    background-color: transparent;
+    border: 0;
+}
+
+.swiper-pagination-total {
+    color: #333 !important;
+}
+
+#shopBanner .btns *,
+#shopBanner .btns *:after {
+    font-size: 1rem !important;
+    line-height: 2;
+    color: white;
+}
+
+.btns * {
+    font-size: 20px !important;
+}
+
+.realIndex0 {
+    background-color: red;
+}
+
+.realIndex1 {
+    background-color: yellow;
+}
+
+.realIndex2 {
+    background-color: green;
+}
+
+.realIndex3 {
+    background-color: blue;
+}
+
+.realIndex4 {
+    background-color: silver;
+}
+
+.realIndex5 {
+    background-color: black;
+}
