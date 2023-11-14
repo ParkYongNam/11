@@ -1,5 +1,6 @@
 $(function () {
     var bgdata = "";
+    var colorArr = [];
     const domm = document.querySelector("#shopBanner");
 
     $("#shopBanner .swiper-slide").each(function () {
