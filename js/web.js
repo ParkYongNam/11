@@ -1,6 +1,13 @@
 $(function () {
     var bgdata = "";
     const domm = document.querySelector("#shopBanner");
+
+    $("#shopBanner .swiper-slide").each(function () {
+        colorArr[$(this).index()] = $(this).data('color')
+    })
+
+
+
     const swiperShop = new Swiper('#shopBanner .swiper', {
         loop: true,
         effect: 'fade',
@@ -18,6 +25,10 @@ $(function () {
             prevEl: '#shopBanner .swiper-button-prev',
         },
         on: {
+            init: function () {
+                console.log(colorArr)
+
+            },
             // slideChange: function () {
             //     //이전 스와이퍼와 새로 들어오는 스와이퍼의 변화이벤트임 그래서 swiper 회전 2회때 2번 실행되어버림
             //     console.log(this.activeIndex);
@@ -31,7 +42,8 @@ $(function () {
             realIndexChange: function () { // realindex가 바뀔때마다이므로 찾던 이벤트이름은 이것이다.
                 console.log("realIndexChange", this.realIndex);
 
-                domm.classList = "realIndex" + this.realIndex;
+                // domm.classList = "realIndex" + this.realIndex;
+                domm.style.backgroundColor = colorArr[this.realIndex]
             }
         }
 
